@@ -48,8 +48,9 @@ You have a really beautiful blue cat
 ////////////////////////////////
 // La méthode : map
 // elle ressemble beaucoup a forEach, sauf que forEach ne retourne rien
+
 // /!/  // cette methode ne retourne RIEN
-// const machin = cats.forEach(function(meow){return meow});
+ const machin = cats.forEach(function(meow){return meow});
 // /!/  // cette methode ne retourne RIEN
 
 // map va toujours renvoyer un nouveau tableau, avec autant d'éléments que celui de base
@@ -66,9 +67,25 @@ const prout = cats.map(function(meow){
 console.log(prout); 
 
 ////////////////////////////////
+//créer un nouveau tableau a partir d'un autre avec la boucle map  
+
+const spa = [
+{
+    name : 'Clara',
+    age  : 18
+},
+{
+    name : 'Morgane',
+    age  : 28
+},
+{
+    name : 'Philippe',
+    age  : 67
+},
+];
 
 
+const rolala = spa.map(function(ObjectPerson){
+    return  "My name is " + ObjectPerson.name + " and i've actualy " + ObjectPerson.age + " years old !";
 
-
-
-
+});
