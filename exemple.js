@@ -4,16 +4,16 @@ let cats =
             'white cat',
             'blue cat'
             ];
-/*
+
 //boucle
 for (var cat = 0; cat < cats.length; cat++) {
 
     console.log(cats[cat]); 
 // result : black cat white cat blue cat
 }
-*/
 
-/*
+
+
 ////////////////////////////////
 //Methode équivalente
 cats.forEach(function(meow){
